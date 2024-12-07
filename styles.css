@@ -341,7 +341,7 @@ nav .open-menu2,
 }
 
 /*Responsive*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   #header {
     /* background-image:none;  */
     background-position: center;
@@ -350,6 +350,11 @@ nav .open-menu2,
   }
   .container {
     padding: 10px 5%;
+    width: 100%;
+  }
+
+  #header {
+    width: 100vw;
   }
 
   .header-text {
@@ -359,6 +364,7 @@ nav .open-menu2,
   }
   .header-text h1 {
     font-size: 30px;
+    margin-bottom: 40px;
   }
 
   .header-text h1 span {
@@ -431,8 +437,7 @@ nav .open-menu2,
     margin: 0 auto;
   }
 
-
-  .skills-list img {
+ .skills-list img {
     width: 100px;
   }
 
@@ -448,6 +453,68 @@ nav .open-menu2,
   .contact-left .btn {
     margin-bottom: 30px;
   }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  nav ul li a{
+    color: #000;
+  }
+
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+ .container {
+    padding: 15px 5%;
+    width: 100%;
+  }
+
+  .header-text {
+    margin-top: 30%;
+    font-size: 18px;
+    color: #000;
+  }
+
+  .header-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .sub-title {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .skills-list div{
+    width: 180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .skills-list img {
+    width: 100px;
+  }
+  
 }
 
 @media screen and (max-width: 1025px) {

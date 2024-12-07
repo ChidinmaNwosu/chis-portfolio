@@ -347,6 +347,7 @@ nav .open-menu2,
     background-position: center;
     background-repeat: no-repeat;
     background-size:45%;
+
     
   }
   .container {
@@ -432,6 +433,37 @@ nav .open-menu2,
 
   .contact-left .btn {
     margin-bottom: 30px;
+  }
+}
+ 
+@media  screen and (max-width: 1025px) {
+   nav ul li .darken{
+    color: #000;
+   }
+   nav ul li a.darken::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  .header-text h1{
+    text-wrap: wrap;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  nav ul li a {
+    font-size: 20px;
+    color:#000
   }
 }
 

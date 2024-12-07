@@ -546,6 +546,19 @@ nav .open-menu2,
     font-size: 20px;
     color: #000;
   }
+  .skills-list div{
+    width: 180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .skills-list img {
+    width: 100px;
+  }
 }
 
 #msg {

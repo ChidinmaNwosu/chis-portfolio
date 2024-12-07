@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi&apos;s Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo-dets">
+            <img src="/images/logo-icon.svg" alt="Logo" class="logo" />
+            <p class="logo-name">CHI.</p>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills" class="darker">Skills</a></li>
+            <li><a href="#projects" class="darker">Projects</a></li>
+            <li><a href="#contact" class="darker">Contact</a></li>
+            <img src="images/close-menu2.svg" class="close-menu2" onclick="closemenu()">
+          </ul>
+            <img src="images/open-menu2.svg" class="open-menu2" onclick="openmenu()">
+        </nav>
+        <div class="header-text">
+          <p>Frontend Engineer</p>
+          <h1>Hi, my name is <span>Chidinma</span><br />Nwosu</h1>
+        </div>
+      </div>
+    </div>
+    <!--About Section-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="/images/chidinma.JPG" alt="chidinma's image" />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a frontend engineer with a passion for creating beautiful and
+              responsive websites. I have experience in HTML, CSS,
+              JavaScript,Tailwind CSS and React. I enjolearn new technologies.
+              <br />
+              <br />
+              I have a passion for creating beautiful and responsive websites. I
+              have experience in HTML, CSS, JavaScript,Tailwind CSS and React. I
+              enjolearn new technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Skills Section-->
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+          <div>
+            <img src="/images/html-icon.svg" alt="HTML" />
+            <h2>HTML</h2>
+          </div>
+          <div>
+            <img src="/images/css-icon.svg" alt="CSS" />
+            <h2>CSS</h2>
+          </div>
+          <div>
+            <img src="/images/javascript-icon.svg" alt="JavaScript" />
+            <h2>JavaScript</h2>
+          </div>
+          <div>
+            <img src="/images/tailwind-icon.svg" alt="Tailwind CSS" />
+            <h2>Tailwind CSS</h2>
+          </div>
+          <div>
+            <img src="/images/react-icon.svg" alt="React" />
+            <h2>React</h2>
+          </div>
+          <div>
+            <img src="/images/git-icon.svg" alt="Git" />
+            <h2>Git/Github</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects Section-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="/images/simple-calculator.jpg" alt="Project 1" />
+
+            <h2>Simple Calculator</h2>
+            <p>A simple calculator built with HTML, CSS and JavaScript</p>
+            <button>
+              <a
+                href="https://simple-calculator-ten-mu.vercel.app/"
+                target="_blank"
+                >View project</a
+              >
+            </button>
+          </div>
+          <div class="project">
+            <img src="/images/country-list.jpg" alt="Project 2" />
+            <h2>A country List</h2>
+            <p>A list of countries built with HTML, CSS and JavaScript</p>
+            <button>
+              <a href="https://country-list-liard.vercel.app/" target="_blank"
+                >View project</a
+              >
+            </button>
+          </div>
+          <div class="project">
+            <img src="/images/To-do-list2.jpg" alt="Project 3" />
+            <h2>A To-Do list</h2>
+            <p>
+              A simple to-do list with local storage built with HTML, CSS and
+              JavaScript
+            </p>
+            <button>
+              <a href="https://to-do-app2-three.vercel.app/" target="_blank"
+                >View Project</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <img
+                src="/images/email-icon.svg"
+                alt="email icon"
+              />contactme@gmail.com
+            </p>
+            <p>
+              <img src="/images/phone-icon.svg" alt="phone icon" />08012345678
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/chidinma-nwosu-484155236/"
+                target="_blank"
+              >
+                <img src="/images/linkedin-icon.svg" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/ChidinmaNwosu" target="_blank">
+                <img src="/images/github-icon.svg" alt="GitHub" />
+              </a>
+              <a href="https://x.com/NwosuChidinma19" target="_blank">
+                <img src="/images/twitter-icon.svg" alt="Twitter" />
+              </a>
+            </div>
+            <a
+              href="/images/Chidinma_Nwosu_Frontend_Engineer_Resume (1).pdf"
+              download=""
+              class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message"
+                rows="6"
+                required
+              ></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Chidinma. All rights reserved.</p>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

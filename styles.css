@@ -145,8 +145,8 @@ nav ul li a:hover::after {
   color: #fffffc;
 }
 
-/*Services section*/
-#services {
+/*skills section*/
+#skills {
   padding: 30px 0;
 }
 
@@ -346,9 +346,7 @@ nav .open-menu2,
     /* background-image:none;  */
     background-position: center;
     background-repeat: no-repeat;
-    background-size:45%;
-
-    
+    background-size: 60%;
   }
   .container {
     padding: 10px 5%;
@@ -357,9 +355,14 @@ nav .open-menu2,
   .header-text {
     margin-top: 100%;
     font-size: 16px;
+    color: #000;
   }
   .header-text h1 {
     font-size: 30px;
+  }
+
+  .header-text h1 span {
+    color: #fffffc;
   }
   .header-text p,
   h1 {
@@ -368,9 +371,8 @@ nav .open-menu2,
 
   nav .open-menu2,
   .close-menu2 {
-    width: 20px;
+    width: 40px;
     display: block;
-    font-size: 25px;
     cursor: pointer;
   }
 
@@ -415,11 +417,23 @@ nav .open-menu2,
     font-size: 14px;
   }
 
+  #skills {
+    padding: 10px 0;
+  }
+
   .skills-list div {
+    width: 180px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
+  }
+
+
+  .skills-list img {
+    width: 100px;
   }
 
   .project p {
@@ -435,12 +449,12 @@ nav .open-menu2,
     margin-bottom: 30px;
   }
 }
- 
-@media  screen and (max-width: 1025px) {
-   nav ul li .darken{
+
+@media screen and (max-width: 1025px) {
+  nav ul li .darken {
     color: #000;
-   }
-   nav ul li a.darken::after {
+  }
+  nav ul li a.darken::after {
     content: "";
     width: 0;
     height: 3px;
@@ -454,21 +468,21 @@ nav .open-menu2,
     width: 100%;
   }
 
-  .header-text h1{
+  .header-text h1 {
     text-wrap: wrap;
     font-size: 32px;
   }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   nav ul li a {
     font-size: 20px;
-    color:#000
+    color: #000;
   }
 }
 
-#msg{
-    color: #fffffc;
-    margin-top:-2px;
-    display: block;
+#msg {
+  color: #fffffc;
+  margin-top: -2px;
+  display: block;
 }
